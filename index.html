@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <!-- Favicon Link -->
+    <link rel="icon" href="./public/favicon.ico" type="image/x-icon">
+    
+    <!-- CDN for tailwind.css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    
+    
+</head>
+<body>
+    <header class="fixed top-0 left-0 w-full">
+        <section class="max-w-6xl mx-auto flex justify-between items-center z-50 bg-white/10 backdrop-blur-md text-center p-6 mt-4 rounded-full shadow-lg">
+            <div class="header-logo flex items-center gap-4 cursor-pointer">
+                <img src="./public/images/icon.png" alt="Logo My Website" class="icon-logo w-8">
+                <span class="font-(family-name:--font-libre-baskerville) font-bold text-lg">NICO FERNANDO HONDO</span>
+            </div>
+            <div class="header-nav">
+                <nav class="nav-link flex justify-between gap-2 font-medium text-center text-gray-700">
+                    <a href="#home" class="w-25">Home</a>
+                    <a href="#aboutMe" class="w-25">My Profile</a>
+                    <a href="#project" class="w-25">Projects</a>
+                    <a href="#contact" class="w-25">Message Us</a>
+                </nav>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="flex flex-col gap-2 bg-gradient-to-b from-gray-300 via-gray-100 to-purple-200 min-h-screen w-full justify-center items-center">
+           <div class="grid grid-rows-2 gap-2 text-center font-(family-name:--font-libre-baskerville) font-semibold">
+                <h1 class="text-3xl">Hi! <span id="fullName">Anda</span></h2>
+                <h2 class="text-4xl">Welcome to My Portfolio</h1>
+           </div>
+        </section>
+
+        <!-- My Profile Section -->
+        <section class="max-w-6xl mx-auto py-20" id="aboutMe">
+            
+            <div class="badge-item w-25 py-2 px-0 font-semibold text-center rounded-full">
+                My Profile
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+                <div class="flex flex-col justify-center items-start gap-6 pt-6">
+                    <h1 class="font-(family-name:--font-playfair-display) text-3xl font-semibold" >I am a Software Engineer <br/> Craft Digital Experiences.</h1>
+                    <div class="w-full h-full bg-white rounded-2xl shadow-xl text-gray-500 hover">
+                        <div class="py-6 px-8">
+                            <p>
+                            Hi, I am Nico Fernando Hondo.
+                            <br>
+                            A Software Engineer based in Medan, Sumatera Utara
+                            </p>
+                            <p class="pt-4">
+                            I was born and raised in Medan. Got my bachelor's degree at Mikroskil University. My Interest in the world of software engineering began there.
+                            </p>
+                            <p class="pt-4">
+                            I spend my free time to sleep, travel, watching, read, and sometimes play video game.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row rounded-full gap-4 py-3 px-8 border-3 border-black bg-[#EEEEEF] text-black text-sm font-semibold justify-center items-center text-center hover:bg-gray-200 cursor-pointer">
+                        <img src="./public/images/icon/box.png" alt="My-Resume" class="w-6 h-6">
+                        <p>Download My Resume</p>
+                        <img src="./public/images/icon/download.png" alt="Download My-Resume" class="w-6 h-6 ">
+                    </div>
+                </div>
+                
+                <div class="py-6 w-full h-full flex flex-col justify-center items-center gap-6">
+                    <div class="flex flex-row w-full justify-center items-center gap-4">
+                        <div class="w-16 bg-white py-4 rounded-full">
+                            <img src="./public/images/icons8-visual-studio-code.svg" alt="Icon Visual Studio Code" class="w-8 h-8 mx-auto">    
+                        </div>
+                        <div class="w-50 rounded-t-3xl rounded-r-3xl text-center bg-white py-4 border border-gray-300">
+                            Software Development
+                        </div>
+                    </div>
+                    <div class="flex flex-row justify-right items-right gap-8">
+                        <div class="flex flex-col gap-2 text-center">
+                            <div class="bg-white border border-gray-300 rounded-tl-4xl rounded-bl-4xl rounded-tr-4xl py-3 px-6">
+                                Choir Coach
+                            </div>
+                            <div class="bg-white rounded-full w-16 h-16 flex justify-center items-center self-end">
+                                <img src="./public/images/treble-clef.png" alt="Icon Photoshop" class="w-8 h-8">
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <div class="border border-purple-600 inline-block">
+                                <img src="./public/images/Nico.JPG" alt="Foto Nico" class="w-[145px] h-[150px] object-cover">
+                            </div>
+                            <span class="corner tl border-purple-600 absolute"></span>
+                            <span class="corner tr z-20 border-purple-600 absolute"></span>
+                            <span class="corner bl z-20 border-purple-600 absolute"></span>
+                            <span class="corner br z-20 border-purple-600 absolute"></span>
+                        </div>
+                        <div class="flex flex-col gap-2 text-center">
+                            <div class="bg-white rounded-full w-16 h-16 flex justify-center items-center">
+                                <img src="./public/images/figma.png" alt="Icon Figma" class="w-7 h-7">
+                            </div>
+                            <div class="bg-white border border-gray-300 rounded-tr-4xl rounded-bl-4xl rounded-br-4xl py-3 px-6">
+                                UI/UX Design
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-row w-full justify-center items-center gap-4">
+                        <div class="w-70 grid grid-cols-3 gap-3 border border-gray-300 rounded-tl-4xl rounded-br-4xl rounded-bl-4xl bg-white py-4 px-4">
+                            <img src="./public/images/HoDo.jpg" alt="Last Heard" class="w-18 rounded-2xl">
+                            <div class="col-span-2 flex flex-col justify-center items-start">
+                                <div class="flex flex-row items-center gap-2 pb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="w-4 h-4 bg-grey-400"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M187.2 100.9C174.8 94.1 159.8 94.4 147.6 101.6C135.4 108.8 128 121.9 128 136L128 504C128 518.1 135.5 531.2 147.6 538.4C159.7 545.6 174.8 545.9 187.2 539.1L523.2 355.1C536 348.1 544 334.6 544 320C544 305.4 536 291.9 523.2 284.9L187.2 100.9z"/></svg>
+                                    <span class="font-semibold text-xs text-gray-400">LAST HEARD</span>
+                                </div>
+                                <p class="text-sm font-medium">Hot Do Ho Dirohakki</p>
+                                <p class="text-gray-400 text-sm font-medium">Youtube.com</p>
+                            </div>
+                        </div>
+                        <div class="w-16 h-16 bg-white py-4 rounded-full justify-center items-center flex">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="fill-red-500 w-8 h-8"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1zM264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z"/></svg>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="w-full bg-(--foreground) py-20" id="project">
+            <div class="max-w-6xl mx-auto ">
+                <div class="badge-item w-25 py-2 px-0 font-semibold text-center rounded-full">
+                    Projects
+                </div>
+                <div class="flex flex-col gap-8 justify-center items-center text-center pt-6">
+                    <div class="grid grid-row-2 gap-2">
+                        <h1 class="font-(family-name:--font-playfair-display) text-3xl font-semibold text-white">Recent Projects</h1>
+                        <p class="text-white text-sm">Here are some of my past works from personal projects and open source ones.</p>
+                    </div>
+                    <div class="flex grid grid-cols-2 justify-center items-center gap-8">
+                        <div class="recentProjectNew w-100 h-80 flex flex-col items-center justify-center text-center rounded-2xl gap-4">
+                            <h1 class="font-(family-name:--font-playfair-display) font-semibold text-2xl text-white">Mini Coding Project - RevoU</h1>
+                            <div class="flex flex-row gap-2 text-black font-semibold text-xs text-center justify-center items-center">
+                                <span class="py-1 px-4 bg-gray-100/40 rounded-lg">HTML</span>
+                                <span class="py-1 px-4 bg-gray-100/40 rounded-lg">CSS</span>
+                                <span class="py-1 px-4 bg-gray-100/40 rounded-lg">JS</span>
+                                <span class="py-1 px-4 bg-gray-100/40 rounded-lg">Tailwind css</span>
+                            </div>
+                        </div>
+                        <div class="recentProjectFreelance w-100 h-80 flex flex-col items-center justify-center text-center rounded-2xl gap-4">
+                            <h1 class="font-(family-name:--font-playfair-display) font-semibold text-2xl text-white">Villa Tolping Website</h1>
+                            <div class="flex flex-row gap-2 text-black font-semibold text-xs text-center justify-center items-center">
+                                <span class="py-1 px-4 bg-gray-100/40 rounded-lg">Next.js</span>
+                                <span class="py-1 px-4 bg-gray-100/40 rounded-lg">Tailwind.css</span>
+                                <span class="py-1 px-4 bg-gray-100/40 rounded-lg">Airtable</span>
+                                <span class="py-1 px-4 bg-gray-100/40 rounded-lg">MIT</span>
+                            </div>
+                        </div>
+                        <div class="recentProjectFreshly w-100 h-80 flex flex-col items-center justify-center text-center rounded-2xl gap-4">
+                            <h1 class="font-(family-name:--font-playfair-display) font-semibold text-2xl text-white">Freshly Dropped: AI for Foodies</h1>
+                            <div class="flex grid grid-cols-3 gap-2 text-black font-semibold text-xs text-center justify-center items-center">
+                                <span class="py-1 px-4 bg-gray-100/40 rounded-lg">Next.js</span>
+                                <span class="py-1 px-4 bg-gray-100/40 rounded-lg">Tailwind.css</span>
+                                <span class="py-1 px-4 bg-gray-100/40 rounded-lg">Tensorflow.js</span>
+                                <span class="py-1 px-4 bg-gray-100/40 rounded-lg">Yolov8</span>
+                                <span class="py-1 px-4 bg-gray-100/40 rounded-lg">MIT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Me Section -->
+        <section class="max-w-6xl mx-auto py-20" id="contact">
+            <div class="badge-item w-25 py-2 px-0 font-semibold text-center rounded-full">
+                Message Us
+            </div>
+
+            <div class="flex flex-col gap-8 justify-center items-center pt-6">
+                <div class="grid grid-row-2 text-center gap-2 pt-12">
+                    <h1 class="font-(family-name:--font-playfair-display) text-3xl font-semibold" >Get In Touch</h1>
+                    <p class="text-md text-gray-500">Feel free to drop me a line below!</p>
+                </div>
+                <div id="split" class="flex grid grid-cols-2 gap-6 w-full justify-center items-center">
+                    <form id="formUser" method="POST" class="w-full max-w-lg bg-white rounded-2xl shadow-xl p-8">
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name</label>
+                            <input class="appearance-none border border-gray-200 rounded-lg w-full py-2 px-3 text-gray-700 text-sm leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
+                            <input class="appearance-none border border-gray-200 rounded-lg w-full py-2 px-3 text-gray-700 text-sm leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Message</label>
+                            <textarea class="appearance-none border border-gray-200 rounded-lg w-full py-2 px-3 text-gray-700 text-sm leading-tight focus:outline-none focus:shadow-outline" id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="flex justify-center">
+                            <button class="bg-purple-600 hover:bg-purple-700 text-white  text-sm font-bold py-3 px-6 rounded-xl focus:outline-none focus:shadow-outline" type="button" onclick="cekForm();">Send Message</button>
+                        </div>
+                    </form>
+
+                    <div id="modal-form" class="flex flex-col gap-6 max-w-lg bg-white rounded-2xl py-6 px-8 hidden">
+                        <div class="flex flex-col gap-2 text-center">
+                            <h1 class="text-2xl">Halo!</h1>
+                            <p class="text-gray-400">Data yang anda isi sebagai berikut:</p>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <p>Nama: <span id="namaForm" class="text-gray-500"></span></p>
+                            <p>Email: <span id="emailForm" class="text-gray-500"></span></p>
+                            <p>Keterangan: <span id="ketForm" class="text-gray-500"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <hr class="border-gray-300">
+
+    <footer class="w-full bg-gradient-to-b from-gray-200 via-gray-100 to-purple-100">
+        <div class="max-w-6xl mx-auto py-6 text-center text-gray-700 text-sm">
+            &copy; 2025 Nico Fernando Hondo. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Modal Overlay -->
+    <div id="modal" class="fixed inset-0 bg-black/30 z-50 flex items-center justify-center hidden">
+        <div class="bg-white rounded-lg p-6 max-w-md w-full mx-4">
+            <h2 class="text-xl font-bold mb-4">Thank for your Message</h2>
+            <p class="text-gray-600 mb-4"><span id="nameModal"></span>, will get back to you shortly.</p>
+            <button onclick="showModal(false)" class="bg-blue-600 text-white px-4 py-2 rounded">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <!-- Call Javascript -->
+     <script src="./js/script.js"></script>
+</body>
+</html>
