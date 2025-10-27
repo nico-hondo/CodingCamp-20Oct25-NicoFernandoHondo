@@ -37,3 +37,18 @@ function showModal(show, name) {
         modalForm.classList.remove('hidden');
     }
 }
+
+function tampilModalNav(){
+    console.log("Modal Tampil");
+    const takeOut = document.getElementById('modalNavRes');
+
+    takeOut.classList.remove('hidden');
+}
+
+function closeComponent(){
+    // For closing the modal navigation in responsive moment
+    const closeModalNav = document.getElementById('modalNavRes');
+    closeModalNav.classList.add('hidden');
+
+    console.log("Tutup Modal");
+}
